@@ -1,0 +1,22 @@
+{
+    "name": "zaratedev/testing-itch",
+    "description": "Testing ITCH: Proyecto para la conferencia \"La importancia del desarrollo guiado por pruebas en la vida real\".",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan Zarate",
+            "email": "zaratedev@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Itch\\": "src/"
+        }
+    }
+}
