@@ -20,4 +20,14 @@ class CalculatorTest extends PHPUnit\Framework\TestCase
         
         $this->assertEquals(4, $result);
     }
+
+    /** @test */
+    public function it_should_return_an_error_when_one_or_two_are_missing()
+    {
+        try {
+            (new Calculator())->sum('four', 2);
+        } catch (\InvalidArgumentException $e) {
+            $this->assertSame('Número invalido', $e->getMessage());
+        }
+    }
 }
